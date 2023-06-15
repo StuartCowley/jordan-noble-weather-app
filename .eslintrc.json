@@ -7,7 +7,7 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "airbnb/hooks",
+        "airbnb/hooks"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -21,7 +21,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
       "quotes": [0],
@@ -29,7 +30,7 @@
       "react/jsx-props-no-spreading": [0],
       "import/order": [1],
       "no-unused-vars": [1],
-      "prettier/prettier": [1, { "endOfLine": "auto" }],
+      "prettier/prettier": [0, { "endOfLine": "auto" }],
       "react/jsx-filename-extension": [
         1,
         {
