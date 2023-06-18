@@ -19,7 +19,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
         data-testid="forecast-icon"
       >
         <img
-          alt="thunderstorm"
+          alt="icon of Stub description 1"
           src="../images/500.png"
         />
       </div>
@@ -34,7 +34,8 @@ exports[`ForecastSummaries renders correctly 1`] = `
         Stub description 1
       </div>
       <button
-        type="button"
+        class="forecast-summary_button"
+        type="submit"
       >
         More details
       </button>
@@ -53,7 +54,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
         data-testid="forecast-icon"
       >
         <img
-          alt="thunderstorm"
+          alt="icon of Stub description2"
           src="../images/800.png"
         />
       </div>
@@ -68,7 +69,8 @@ exports[`ForecastSummaries renders correctly 1`] = `
         Stub description2
       </div>
       <button
-        type="button"
+        class="forecast-summary_button"
+        type="submit"
       >
         More details
       </button>

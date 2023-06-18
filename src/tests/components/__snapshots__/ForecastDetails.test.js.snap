@@ -5,18 +5,26 @@ exports[`ForecastDetails renders correctly 1`] = `
   <div
     class="forecast-details"
   >
+    <h3
+      class="forecast-details_heading"
+    >
+      Forecast Details for Mon Apr 30 2018:
+    </h3>
     <ul>
       <li>
-        Date:Mon Apr 30 2018
+        Temperature High: 22°C
       </li>
       <li>
-        Temperature High/Low:2212
+        Temperature Low: 12°C
       </li>
       <li>
-        Wind Speed/Direction:13s
+        Wind Speed: 13mph
       </li>
       <li>
-        Humidity:30%
+        Wind Direction: S
+      </li>
+      <li>
+        Humidity: 30%
       </li>
     </ul>
   </div>

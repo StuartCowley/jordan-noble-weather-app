@@ -6,9 +6,11 @@ exports[`SearchForm renders correctly 1`] = `
     class="search-form"
   >
     <input
+      class="search-form_input"
       type="text"
     />
     <button
+      class="search-form_button"
       type="submit"
     >
       Search

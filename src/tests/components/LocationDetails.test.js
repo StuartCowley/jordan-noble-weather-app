@@ -4,7 +4,7 @@ import LocationDetails from "../../components/LocationDetails";
 
 describe("LocationDetails", () => {
   it('renders the correct city and location props', () => {
-    const { getByText } = render(<LocationDetails city="Manchester" country="UK" />);
-    expect(getByText("Manchester, UK")).toBeInstanceOf(HTMLHeadingElement);
+    const { getByText } = render(<LocationDetails city="Manchester" country="GB" />);
+    expect(getByText("Five day forecast for Manchester, GB")).toBeInstanceOf(HTMLHeadingElement);
   });
 });
