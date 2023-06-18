@@ -3,15 +3,21 @@ import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
+import SearchForm from "./SearchForm";
 
 function App() {
   const [selectedDate, setSelectedDate] = useState(0);
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     getForecast(setSelectedDate, setForecasts, setLocation);
   }, []);
+
+  const handleCitySearch = () => {
+    getForecast(setSelectedDate, setForecasts, setLocation, searchText);
+  };
 
   const selectedForecast = forecasts.find((item) => item.date === selectedDate);
   const { city, country } = location;
@@ -21,6 +27,11 @@ function App() {
   return (
     <div className="weather-app">
       <LocationDetails city={city} country={country} />
+      <SearchForm
+        searchText={searchText}
+        setSearchText={setSearchText}
+        onSubmit={handleCitySearch}
+      />
       <ForecastSummaries forecasts={forecasts} onForecastSelect={handleForecastSelect} />
       {selectedForecast && (<ForecastDetails forecast={selectedForecast} />)}
     </div>
