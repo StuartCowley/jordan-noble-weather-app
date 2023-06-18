@@ -4,6 +4,7 @@ import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
 import SearchForm from "./SearchForm";
+import "../styles/App.css";
 
 function App() {
   const [selectedDate, setSelectedDate] = useState(0);

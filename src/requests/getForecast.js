@@ -18,7 +18,7 @@ const getForecast = async (
   } catch (error) {
     if (error.response.status === 404) {
       // eslint-disable-next-line no-useless-escape
-      setErrorMessage(`Sorry, \" ${searchText} \"  is not a valid town or city in the UK!`);
+      setErrorMessage(`Sorry, \" ${searchText} \"  is not a valid town or city in the UK. Try again.`);
       // eslint-disable-next-line no-console
       console.error("Location is not valid", error);
     } else {

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/ForecastDetails.css";
 
 function ForecastDetails(props) {
   const { forecast } = props;
@@ -7,23 +8,39 @@ function ForecastDetails(props) {
 
   return (
     <div className="forecast-details">
+      <h3 className="forecast-details_heading">
+        Forecast Details for
+        {' '}
+        {formattedDate}
+        :
+      </h3>
       <ul>
         <li>
-          Date:
-          {formattedDate}
-        </li>
-        <li>
-          Temperature High/Low:
+          Temperature High:
+          {' '}
           {forecast.temperature.max}
-          {forecast.temperature.min}
+          &deg;C
         </li>
         <li>
-          Wind Speed/Direction:
+          Temperature Low:
+          {' '}
+          {forecast.temperature.min}
+          &deg;C
+        </li>
+        <li>
+          Wind Speed:
+          {' '}
           {forecast.wind.speed}
-          {forecast.wind.direction}
+          mph
+        </li>
+        <li>
+          Wind Direction:
+          {' '}
+          {forecast.wind.direction.toUpperCase()}
         </li>
         <li>
           Humidity:
+          {' '}
           {forecast.humidity}
           %
         </li>
