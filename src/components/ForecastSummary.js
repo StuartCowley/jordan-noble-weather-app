@@ -5,6 +5,7 @@ function ForecastSummary(props) {
   const {
     date, description, icon, temperature, onSelect,
   } = props;
+
   const weatherCode = `${icon.slice(0, 1)}00`;
   const formattedDate = new Date(date).toDateString();
 
