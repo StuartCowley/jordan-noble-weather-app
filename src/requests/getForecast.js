@@ -5,6 +5,7 @@ const getForecast = async (setSelectedDate, setForecasts, setLocation) => {
   setSelectedDate(response.data.forecasts[0].date);
   setForecasts(response.data.forecasts);
   setLocation(response.data.location);
+  console.log(response.data);
 };
 
 export default getForecast;
