@@ -1,0 +1,17 @@
+li {
+  margin-top: 5px;
+}
+
+.forecast-details {
+  background-color: white;
+  width: 35%;
+  margin: auto;
+  margin-top: 2.5%;
+  border-style: dashed;
+  font-size: 1em;
+}
+
+.forecast-details_heading {
+  text-align: center;
+  font-style: italic;
+}

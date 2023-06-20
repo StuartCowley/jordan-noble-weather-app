@@ -1,0 +1,21 @@
+.forecast-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.forecast-summary_temperature {
+  margin-top: 5%;
+}
+
+.forecast-summary_description {
+  margin-top: 5%;
+}
+
+.forecast-summary_button {
+  margin-top: 5%;
+  font-size: 0.85em;
+  font-style: italic;
+  padding: 2.5%;
+}
